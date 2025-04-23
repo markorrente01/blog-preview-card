@@ -1,0 +1,214 @@
+@mixin font($size: normal, $weight: normal){
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: $weight;
+    font-style: normal;
+    font-size: $size;
+}
+
+$Yellow: hsl(47, 88%, 63%);
+$White: hsl(0, 0%, 100%);
+$Gray-500: hsl(0, 0%, 42%);
+$Gray-950: hsl(0, 0%, 7%);
+$display: flex;
+$margin-b: 1.063rem;
+$margin-b1: 0.813rem;
+$transition: 0.3s linear;
+$cursor: pointer;
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    background: $Yellow;
+    display: $display;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+main{
+    width: 25%;
+    padding: 1.4rem;
+    background: $White;
+    border-radius: 20px;
+    border: 2px solid;
+    box-shadow: 7px 7px 0 0 black;
+
+        section{
+            img{
+                margin-bottom: $margin-b1;
+                border-radius: 10px;
+                width: 100%;
+            }
+
+            div[role="button"]{
+                @include font($size: 14.5px, $weight: 800);
+                background: $Yellow;
+                display: inline-block;
+                padding: 0.438rem 0.875rem;
+                border-radius: 5px;
+                text-align: center;
+                margin-bottom: $margin-b1;
+                transition: $transition;
+
+
+                &:hover {
+                    background-color: hsla(47, 88%, 63%, 0.8);
+                    cursor: $cursor;
+                  }
+                  
+            }
+
+            .para1{
+                @include font($weight: 500);
+                margin-bottom: $margin-b;
+            }
+
+            .heading{
+                @include font($weight: 800);
+                margin-bottom: $margin-b;
+                transition: $transition;
+
+                &:hover{
+                    color: $Yellow;
+                    cursor: $cursor;
+                }
+    
+            }
+
+            
+            article{
+                @include font;
+                margin-bottom: $margin-b;
+                line-height: 1.5;
+                
+            }
+
+            .profile{
+                display:  $display;
+                gap: 0.938rem;
+                align-items: center;
+
+                    img{
+                        width: 12%;
+                        margin: auto 0; 
+                    }
+                
+
+                .name{
+                    @include font($size: 0.938rem, $weight: 800);
+        
+                }
+            }
+                
+        }    
+}
+
+@media (max-width: 1200px){
+    main{
+        width: 27%;
+        padding: 1.3rem;
+    
+            section{
+    
+                div[role="button"]{
+                    @include font($size: 0.813rem, $weight: 800);
+                    padding: 0.438rem 0.5rem;
+                }
+    
+                .para1{
+                    @include font($size: 0.938rem, $weight: 500);
+                }
+    
+                .heading{
+                    @include font($size: 1.438rem, $weight: 800);
+                }
+    
+                
+                article{
+                    @include font($size: 0.906rem);
+                }
+    
+                .profile{
+    
+                        img{
+                            width: 11%; 
+                        }
+                    
+    
+                    .name{
+                        @include font($size: 0.9rem, $weight: 800);
+            
+                    }
+                }
+                    
+            }    
+    }
+
+}
+
+@media (max-width: 990px){
+    main{
+        width: 33%;
+        padding: 1.3rem;
+    }
+}
+
+@media (max-width: 600px){
+    main{
+        width: 60%;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 576px){
+    main{
+        width: 60%;
+        padding: 1.2rem;
+    }
+}
+
+@media (max-width: 376px){
+    main{
+        width: calc(100% - 60px);
+        padding: 1.2rem;
+        section{
+    
+            div[role="button"]{
+                @include font($size: 0.813rem, $weight: 800);
+                padding: 0.438rem 0.7rem;
+            }
+
+            .para1{
+                @include font($size: 0.9rem, $weight: 500);
+            }
+
+            .heading{
+                @include font($size: 1.35rem, $weight: 800);
+            }
+
+            
+            article{
+                @include font($size: 0.8rem);
+            }
+
+            .profile{
+
+                    img{
+                        width: 12%; 
+                    }
+                
+
+                .name{
+                    @include font($size: 0.8rem, $weight: 800);
+        
+                }
+            }
+                
+        }    
+    }
+}

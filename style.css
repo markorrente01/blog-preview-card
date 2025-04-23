@@ -1,0 +1,200 @@
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+body {
+  background: hsl(47, 88%, 63%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+main {
+  width: 25%;
+  padding: 1.4rem;
+  background: hsl(0, 0%, 100%);
+  border-radius: 20px;
+  border: 2px solid;
+  box-shadow: 7px 7px 0 0 black;
+}
+main section img {
+  margin-bottom: 0.813rem;
+  border-radius: 10px;
+  width: 100%;
+}
+main section div[role=button] {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 14.5px;
+  background: hsl(47, 88%, 63%);
+  display: inline-block;
+  padding: 0.438rem 0.875rem;
+  border-radius: 5px;
+  text-align: center;
+  margin-bottom: 0.813rem;
+  transition: 0.3s linear;
+}
+main section div[role=button]:hover {
+  background-color: hsla(47, 88%, 63%, 0.8);
+  cursor: pointer;
+}
+main section .para1 {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+  font-size: normal;
+  margin-bottom: 1.063rem;
+}
+main section .heading {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: normal;
+  margin-bottom: 1.063rem;
+  transition: 0.3s linear;
+}
+main section .heading:hover {
+  color: hsl(47, 88%, 63%);
+  cursor: pointer;
+}
+main section article {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: normal;
+  font-style: normal;
+  font-size: normal;
+  margin-bottom: 1.063rem;
+  line-height: 1.5;
+}
+main section .profile {
+  display: flex;
+  gap: 0.938rem;
+  align-items: center;
+}
+main section .profile img {
+  width: 12%;
+  margin: auto 0;
+}
+main section .profile .name {
+  font-family: "Outfit", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 800;
+  font-style: normal;
+  font-size: 0.938rem;
+}
+
+@media (max-width: 1200px) {
+  main {
+    width: 27%;
+    padding: 1.3rem;
+  }
+  main section div[role=button] {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 0.813rem;
+    padding: 0.438rem 0.5rem;
+  }
+  main section .para1 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.938rem;
+  }
+  main section .heading {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.438rem;
+  }
+  main section article {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.906rem;
+  }
+  main section .profile img {
+    width: 11%;
+  }
+  main section .profile .name {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 0.9rem;
+  }
+}
+@media (max-width: 990px) {
+  main {
+    width: 33%;
+    padding: 1.3rem;
+  }
+}
+@media (max-width: 600px) {
+  main {
+    width: 60%;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 576px) {
+  main {
+    width: 60%;
+    padding: 1.2rem;
+  }
+}
+@media (max-width: 376px) {
+  main {
+    width: calc(100% - 60px);
+    padding: 1.2rem;
+  }
+  main section div[role=button] {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 0.813rem;
+    padding: 0.438rem 0.7rem;
+  }
+  main section .para1 {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-size: 0.9rem;
+  }
+  main section .heading {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 1.35rem;
+  }
+  main section article {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 0.8rem;
+  }
+  main section .profile img {
+    width: 12%;
+  }
+  main section .profile .name {
+    font-family: "Outfit", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 800;
+    font-style: normal;
+    font-size: 0.8rem;
+  }
+}/*# sourceMappingURL=style.css.map */
